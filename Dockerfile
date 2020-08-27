@@ -1,5 +1,5 @@
-FROM alpine:3.10
-RUN apk add --no-cache python2=2.7.16-r1 iputils=20180629-r1
+FROM alpine:3.12
+RUN apk add --no-cache python2=2.7.18-r0 iputils=20190709-r0
 COPY pmtu /
 ENTRYPOINT ["/pmtu"]
 CMD ["-h"]
